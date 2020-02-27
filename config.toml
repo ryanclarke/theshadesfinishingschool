@@ -1,0 +1,4 @@
+baseURL = "http://theshadesfinishingschool.com"
+languageCode = "en-us"
+title = "The Shades Finishing School"
+theme = "the-shades"
