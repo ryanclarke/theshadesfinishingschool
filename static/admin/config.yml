@@ -16,7 +16,7 @@ collections:
   create: true # Allow users to create new documents in this collection
   slug: "{{slug}}" # Filename template, e.g., {{year}}-{{month}}-{{day}}-{{slug}} -> YYYY-MM-DD-title.md
   format: "toml-frontmatter"
-  summary: "[{{year}}-{{month}}-{{day}}] {{category}}: {{title}}"
+  summary: "{{year}}-{{month}}-{{day}} [{{category}}] - {{title}}"
   fields: # The fields for each document, usually in front matter
   - {label: "Title", name: "title", widget: "string"}
   - {label: "Publish Date", name: "date", widget: "datetime", format: "LL", timeFormat: false}
