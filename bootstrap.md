@@ -1,6 +1,6 @@
-# Bootstrap [Hugo](https://gohugo.io/) site
+# Bootstrap [Hugo](https://gohugo.io) site
 
-Using [Tailwind css](HugoTailwindBootstrap) and [NetlifyCMS](https://www.netlifycms.org/)
+Using [Tailwind CSS](https://tailwindcss.com), [Ionicons](https://ionicons.com) and [NetlifyCMS](https://www.netlifycms.org)
 
 _Assumes you have `hugo` and `npm` on your `PATH`._
 
@@ -35,4 +35,10 @@ module.exports = {
 ```html
 {{ $style := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+```
+
+* Insert in `layouts/partials/footer.html` in theme dir:
+
+```html
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 ```
