@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+- name: "post" # Used in routes, e.g., /admin/collections/blog
+  label: "Post" # Used in the UI
+  folder: "content/post" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., {{year}}-{{month}}-{{day}}-{{slug}} -> YYYY-MM-DD-title.md
+  format: "toml-frontmatter"
+  fields: # The fields for each document, usually in front matter
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "Publish Date", name: "date", widget: "datetime", format: "LL", timeFormat: false}
+  - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+  - {label: "Zone", name: "zone", widget: "relation", collection: "zones", valueField: "title", searchFields: ["title"]}
+  - {label: "Body", name: "body", widget: "markdown"}
+- name: "craft" # Used in routes, e.g., /admin/collections/blog
+  label: "Craft" # Used in the UI
+  folder: "content/craft" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  format: "toml-frontmatter"
+  fields: # The fields for each document, usually in front matter
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "Publish Date", name: "date", widget: "datetime", format: "LL", timeFormat: false}
+  - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+  - {label: "Body", name: "body", widget: "markdown"}
+- name: "nature-study" # Used in routes, e.g., /admin/collections/blog
+  label: "Nature study" # Used in the UI
+  folder: "content/nature study" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  format: "toml-frontmatter"
+  fields: # The fields for each document, usually in front matter
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "Publish Date", name: "date", widget: "datetime", format: "LL", timeFormat: false}
+  - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+  - {label: "Body", name: "body", widget: "markdown"}
+- name: "zone" # Used in routes, e.g., /admin/collections/blog
+  label: "Zone" # Used in the UI
+  folder: "content/zone" # The path to the folder where the documents are stored
+  create: true # Allow users to create new documents in this collection
+  slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  format: "toml-frontmatter"
+  fields: # The fields for each document, usually in front matter
+  - {label: "Title", name: "title", widget: "string"}
