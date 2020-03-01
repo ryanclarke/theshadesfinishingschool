@@ -1,6 +1,6 @@
 +++
 title = "Horse museum"
-date = "March 1, 2020"
+date = "January 24, 2020"
 category = "craft"
 thumbnail = "/images/uploads/horse-museum.jpeg"
 +++
