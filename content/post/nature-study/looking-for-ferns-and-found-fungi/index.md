@@ -2,7 +2,7 @@
 title = "Looking for ferns and found fungi"
 date = "November 8, 2019"
 category = "Nature study"
-thumbnail = "fungi-on-log-drawing.jpeg"
+featured_image = "fungi-on-log-drawing.jpeg"
 +++
 We finally got out for a nature study on ferns only the ferns were all dead, so we settled on fungi growing on a log.
 
