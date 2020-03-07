@@ -4,7 +4,7 @@
   "description": "The Shades Finishing School",
   "main": "index.js",
   "scripts": {
-    "build": "build.sh"
+    "watch": "hugo server"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",

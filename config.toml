@@ -2,3 +2,6 @@ baseURL = "https://theshadesfinishingschool.netlify.com"
 languageCode = "en-us"
 title = "The Shades Finishing School"
 theme = "the-shades"
+
+[params]
+    logo = "/images/logo.jpeg"
