@@ -1,4 +1,0 @@
-+++
-title = "Crafts"
-zone = true
-+++
