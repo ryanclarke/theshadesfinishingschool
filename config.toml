@@ -5,3 +5,6 @@ theme = "the-shades"
 
 [params]
     logo = "/images/logo.jpeg"
+
+[taxonomies]
+ category = "categories"

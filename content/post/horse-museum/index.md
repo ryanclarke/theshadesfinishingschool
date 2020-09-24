@@ -1,7 +1,7 @@
 +++
 title = "Horse museum"
 date = "January 24, 2020"
-category = "Craft"
+categories = ["Craft"]
 featured_image = "horse-museum.jpeg"
 +++
 I was so tired and unmotivated today, and so instead of normal school, I had the girls put together a horse art exhibit based on the book _Dr. Seuss’s Horse Museum_.
